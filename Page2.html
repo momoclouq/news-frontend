@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <title> Word Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="nav justify-content-end">
+            <li class="nav-item active">
+                <a class="navbar-brand" href="#">
+                    <img src="" alt="Logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Collection</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            </ul>
+        <div class="col-sm-3 col-md-3 pull-right">
+            <form class="form-inline" action="/action_page.php" >
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" >
+                <button class="btn btn-success btn-lg float-right" type="submit">Search</button>
+            </form>
+        </div>
+      </nav>
+    
+    <div class="main">
+        <div class="d-flex">
+            <div class="p-2 info flex-fill">
+                <h1 class="title">
+                    Word lists
+                </h1>
+                
+                <div class="words-list">
+                    <h3 class= "title"> My word list</h3>
+                    <span class="search">
+                        <form method="POST" action="get">
+                            <input type="text" placeholder="New word list"> <button type="submit" > Create word list</button>
+                        </form>
+                    </span>
+            </div>
+            </div>
+            <div class="p-2 warning flex-fill">
+                <h3 class="title">Search word list</h3>
+                <form action="">
+                    <input type="text" placeholder="Search word list title">
+                    <div class="but-sub">
+                        <button type="submit" id="b1">Search</button>
+                        <button id="b2">Clear search</button>
+                    </div>
+                </form>
+
+                <div class="filter-box">
+                    <h3 class="title"> Filter word list</h3>
+                        <select name="dictionary" id=""> 
+                            <option value="dictionaries"></option>
+                        </select>
+                        <select name="level" id="">
+                            <option value=""></option>
+                        </select>
+                        <div class="but-sub">
+                                <button type="submit" id="b1">Apply filter</button>
+                                <button id="b2">Clear filter</button>
+                        </div>
+                </div>
+            <div class="p-2 primary flex-fill">
+                
+            </div>
+          </div>
+         
+    </div>
+
+
+</body>
+</html>
