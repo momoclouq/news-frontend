@@ -1,7 +1,7 @@
+/* React Setup (React, React Router DOM) */
 import React from 'react';
+import { Link } from 'react-router-dom'
 
-/* CSS Setup (Vanilla CSS, Bootstrap 5) */
-import 'bootstrap/dist/css/bootstrap.css'
 
 /* FontAwesome Setup */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -50,10 +50,10 @@ function Footer(){
                         <h5 className="text-uppercase mb-4 font-weight-bold text-info">Let Us Help</h5>
                         <hr className="mb-4" />
                         <p>
-                            <a href="/" className="text-light" style={{textDecoration: "none"}}>Your Account</a>
+                            <Link to="/AboutUs" className="text-light" style={{textDecoration: "none"}}>About Us</Link>
                         </p>
                         <p>
-                            <a href="/" className="text-light" style={{textDecoration: "none"}}>News Notification</a>
+                            <Link to="/TermOfService" className="text-light" style={{textDecoration: "none"}}>Term of Service</Link>
                         </p>
                         <p>
                             <a href="/" className="text-light" style={{textDecoration: "none"}}>Manage Your Content and Device</a>

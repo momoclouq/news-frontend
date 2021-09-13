@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "question": "to go fast to somewhere",
+            "choices": ["rush","run","go","push"],
+            "answer": "rush"
+        },
+        {
+            "question": "to go normally to somewhere",
+            "choices": ["rush","run","go","push"],
+            "answer": "go"
+        },
+        {
+            "question": "to go slow to somewhere",
+            "choices": ["rush","run","go","walk"],
+            "answer": "walk"
+        }
+    ]
+}

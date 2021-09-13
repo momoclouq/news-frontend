@@ -3,15 +3,29 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 /* CSS Setup (Vanilla CSS, Bootstrap 5) */
 import './App.css';
+import './css/Test/QuizMain.css'
+import 'bootstrap/dist/css/bootstrap.css'
+
+/* Bootstrap 5 JavaScript */
+import 'bootstrap/js/dist/collapse'
+import 'bootstrap/js/dist/dropdown'
+
+
+
+
 /* Linked */
 import Navbar from './components/NavbarItems/Navbar';
-import Footer from './components/FooterItem/Footer'
+import Footer from './components/FooterItem/Footer';
 /* Page Linked */
 import Home from './components/pages/home';
 import News from './components/pages/news';
-import Collection from './components/pages/collection';
-import Test from './components/pages/test';
+import CollectionList from './components/pages/CollectionList/CollectionList';
+import QuizBase from './components/pages/Test/QuizBase';
+
 import Login from './components/pages/loginpage'
+import AboutUs from './components/pages/AboutUs/aboutus'
+import TermOfService from './components/pages/TermOfService';
+
 
 
 
@@ -20,34 +34,35 @@ function App() {
     <Router>
     <div className="App">
       <Navbar />
-      
       <Switch>
 
         <Route exact path="/">
           <Home />
         </Route>
 
-        <Route path="/news">
+        <Route path="/News">
           <News />
         </Route>
 
-        <Route path="/collection">
-          <Collection />
+        <Route path="/Collection">
+          <CollectionList />
         </Route>
 
-        <Route path="/test">
-          <Test />
+        <Route path="/Test">
+          <QuizBase />
         </Route>
 
         <Route path="/loginpage">
           <Login />
         </Route>
 
+        <Route path="/AboutUs">
+          <AboutUs />
+        </Route>
+        <Route path="/TermOfService">
+          <TermOfService />
+        </Route>
       </Switch>
-
-      <br />
-      <br />
-      <br />
       <Footer />
     </div>
     </Router>
